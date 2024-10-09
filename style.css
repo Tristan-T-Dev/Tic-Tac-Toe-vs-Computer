@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.HeadTxt{
+    position: sticky !important;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #fff;
+    height: auto;
+    padding-top: 4rem;
+}
+body{
+    background-color: #0F0F0F;
+    position: relative;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+.header{
+    display: flex;
+    width: 235px;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    align-items: center;
+    color: #fff;
+}
+.header .player{
+    background-color: #a7a7a7;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    border: solid 4px #b5b5b5;
+    border-radius: 10px;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+.header .player-active{
+    opacity: 1;
+    border: solid 4px #E3E3E3;
+    background: #E3E3E3;
+}
+
+.header .player:hover{
+    background-color: #D3D3D3;
+    border-color: #D3D3D3;
+}
+.header #xPlayer{
+    color: darkcyan;
+}
+.header #oPlayer{
+    color: darkred;
+}
+.header #xPlayer:active{
+    background-color: darkcyan;
+    border-color: #18574d;
+    color: #fff;
+}
+.header #oPlayer:active{
+    background-color: #8f1a1e;
+    border-color: #5e1111;
+    color: #fff;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+    gap: 12px;
+}
+.board .cell{
+    background-color:#272727 ;
+    -o-border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+.board .cell:hover{
+    background-color: #464242;
+}
+.restartBtn{
+    margin-top: 3.5rem !important;
+    width: 235px !important;
+    background-color: #272727;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    transition: 0.3s background;
+    visibility: hidden;
+}
+.restartBtn:hover{
+    background-color: #464242;
+}
